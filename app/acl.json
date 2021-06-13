@@ -1,0 +1,20 @@
+{
+  "Guest" : {
+    "denied" : {},
+    "Home" : ["*"],
+    "Videos" : ["*"],
+    "Register" : ["login", "register"],
+    "Restricted" : ["*"]
+  },
+  "LoggedIn" : {
+    "denied" : {
+      "Register" : ["login", "register"]
+    },
+    "Register" : ["logout"]
+  },
+  "Admin" : {
+    "denied" : {},
+    "Home" : ["*"],
+    "Admin" : ["*"]
+  }
+}
